@@ -1,0 +1,14 @@
+.themed-grid-col{
+  column-count: 5;
+}
+button
+{
+  background-color: orange;
+  padding: 10px;
+  margin-left:1000px;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  color: white;
+  border-color: orange;
+  border-style: none;
+}
