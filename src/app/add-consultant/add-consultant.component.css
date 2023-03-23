@@ -1,0 +1,29 @@
+*
+{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+button{
+  background-color: orange;
+  margin: 8px;
+  border-color: orange;
+  padding: 8px;
+  width: 80%;
+  margin-left: 60px;
+}
+button:hover{
+  background-color: white;
+  color: black;
+  margin: 8px;
+  border-color: black;
+  padding: 8px;
+  width: 80%;
+  margin-left: 60px;
+}
+.mb-3 {
+  width: 85%;
+}
+h3{
+  margin-top: 35px;
+}
