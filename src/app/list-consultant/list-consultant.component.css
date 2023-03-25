@@ -25,3 +25,8 @@ button:hover{
 h1{
   padding-top: 18px;
 }
+.pagination{
+display: flex;
+margin-top: 45px;
+margin-left: 45%;
+}

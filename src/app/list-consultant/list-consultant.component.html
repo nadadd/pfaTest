@@ -1,15 +1,19 @@
-<div>
+
   <div class="container">
 
 
-    <h1 class="mt-4"><b>Consultants List</b></h1><span><button [routerLink]="['/add']">add new consultant</button></span>
+    <h1 class="mt-4"><b>Consultants List</b></h1>
+
+
+
+   <span><button [routerLink]="['/add']">Add new consultant</button></span>
     <br>
     <br>
     <br>
     <p></p>
 
     <div class="row mb-5 text-center">
-      <div class="col-4 themed-grid-col"><b>Consultant</b></div>
+      <div class="col-4 themed-grid-col"><b>Prénom</b></div>
       <div class="col-4 themed-grid-col"><b>Mail</b></div>
       <div class="col-4 themed-grid-col"><b>Tél</b></div>
 
@@ -52,7 +56,25 @@
 
 
   </div>
+  
+  <nav aria-label="Page navigation example" >
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" [routerLink]="['/']" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" [routerLink]="['/']">1</a></li>
+      <li class="page-item"><a class="page-link" [routerLink]="['/']">2</a></li>
+      <li class="page-item"><a class="page-link" [routerLink]="['/']">3</a></li>
+      <li class="page-item">
+        <a class="page-link" [routerLink]="['/']" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
-</div>
+
 
 
