@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddConsultantComponent } from './add-consultant/add-consultant.component';
 import { EditConsultantComponent } from './edit-consultant/edit-consultant.component';
 import { ListConsultantComponent } from './list-consultant/list-consultant.component';
+import { Page404Component } from './page404/page404.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'add',
     component:AddConsultantComponent
+  },
+  {
+    path:'**',
+    component:Page404Component
   }
 ];
 

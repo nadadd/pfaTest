@@ -7,6 +7,7 @@ import { ListConsultantComponent } from './list-consultant/list-consultant.compo
 import { AddConsultantComponent } from './add-consultant/add-consultant.component';
 import { EditConsultantComponent } from './edit-consultant/edit-consultant.component';
 import { PopupAddComponent } from './popup-add/popup-add.component';
+import { Page404Component } from './page404/page404.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PopupAddComponent } from './popup-add/popup-add.component';
     ListConsultantComponent,
     AddConsultantComponent,
     EditConsultantComponent,
-    PopupAddComponent
+    PopupAddComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
