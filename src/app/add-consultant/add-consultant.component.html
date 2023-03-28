@@ -1,21 +1,35 @@
-<h3><b>Add a consultant</b></h3>
+<h3><b>Ajouter un Etudiant</b></h3>
 
-<form>
-  <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Name*</label>
-    <input type="name" class="form-control" id="exampleInputPassword1" placeholder="consultantname" required>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address*</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="emailadress@gmail.com" required>
+<form [formGroup]="userProfil" (ngSubmit)="onSubmit()">
 
-  </div>
+    <label>Prénom
+    <br>
+    <input type="text" formControlName="name" placeholder="name">
+    </label>
+<br>
+<br>
+
+    <label>Mail
+    <br>
+    <input type="text" formControlName="email" placeholder="Emailaddress@gmail.com">
+    </label>
+<br>
+<br>
+    <label>Téléphone
+    <br>
+    <input type="text" formControlName="Tel" placeholder="(+216) 00 000 000">
+    </label>
+
   <br>
   <br>
+  <br>
 
-  <button type="submit" class="btn btn-primary">confirm</button>
-  <button type="cancel" class="btn btn-secondary" [routerLink]="['/']">cancel</button>
+  <button type="submit" [disabled]="!userProfil.valid">Enregistrer</button>
+  <button type="cancel" [routerLink]="['/']">retour</button>
+
+
 </form>
+
 <!--<ng-template #content let-modal>
   <div class="modal-header">
       <h4 class="modal-title"

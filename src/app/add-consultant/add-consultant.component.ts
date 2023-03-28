@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
+import { Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-consultant',
@@ -6,8 +8,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-consultant.component.css']
 })
 export class AddConsultantComponent {
+  userProfil = new FormGroup({
 
-} 
+    name : new FormControl('',Validators.required),
+    email : new FormControl(''),
+    tel : new FormControl(''),
+
+})
+ onSubmit(){
+  console.warn(this.userProfil.value);
+  console.log(this.userProfil.controls['name'].value);
+ }
+
+}
+
+
+
 /*import {Component} from '@angular/core';
 
 import {NgbModal, ModalDismissReasons}
